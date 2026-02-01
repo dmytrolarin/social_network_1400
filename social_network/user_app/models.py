@@ -8,7 +8,7 @@ class Profile(models.Model):
     phone_number = PhoneNumberField()
     avatar = models.ImageField(upload_to='images/avatars/', null=True)
     
-    # def __str__(self):
-    #     return self.user
+    def __str__(self):
+        return self.user.username
 
     
